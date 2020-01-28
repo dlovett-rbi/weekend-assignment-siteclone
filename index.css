@@ -15,7 +15,6 @@ h1 {
 #pricetrend {
   height: 180px;
   object-fit: contain;
-  padding: 20px;
 }
 
 #left-box {
@@ -46,10 +45,13 @@ input[type="range"] {
 
 .bold {
   font-weight: bold;
+  font-size: 25px;
+  color: #484848;
 }
 
 .icelandair {
-  height: 40px;
+  height: 60px;
+  padding-left: 75px;
   object-fit: contain;
 }
 .icelandairlogo {
@@ -80,4 +82,21 @@ input[type="range"] {
   height: 40%;
   display: flex;
   justify-content: space-between;
+}
+
+.smalldetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: column;
+  color: lightgray;
+}
+
+.kayak {
+  color: grey;
+  font: lighter;
+  font-size: small;
+}
+
+.blue-text {
+  color: blue;
 }
