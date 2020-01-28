@@ -1,0 +1,83 @@
+main {
+  display: flex;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  padding-top: 109px;
+}
+
+.planepic {
+  height: 30px;
+  object-fit: contain;
+}
+#pricetrend {
+  height: 180px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+#left-box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+#right-box {
+  width: 70%;
+}
+
+.wrapperbutton button {
+  display: flex;
+  justify-content: flex-start;
+}
+
+input[type="range"] {
+  width: 85%;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.icelandair {
+  height: 40px;
+  object-fit: contain;
+}
+.icelandairlogo {
+  height: 100px;
+}
+.center-img {
+  display: flex;
+  place-items: center;
+}
+.outer-box {
+  display: flex;
+  border-bottom: 1px solid grey;
+}
+
+.outer-box div {
+  padding: 10px;
+}
+
+.body-box {
+  width: 100%;
+}
+
+.image-box {
+  display: flex;
+  height: 60%;
+}
+.details-fares {
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+}

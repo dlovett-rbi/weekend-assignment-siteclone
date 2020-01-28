@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <div class="wrappertopnav">
+      <img
+        class="planepic"
+        src="https://cdn2.vectorstock.com/i/1000x1000/23/96/black-plane-icon-vector-23682396.jpg"
+      />
+      <p>NYC > REK</p>
+      <p>Jan 25 - Jan 27</p>
+      <img
+        class="planepic"
+        src="https://cdn2.vectorstock.com/i/1000x1000/23/96/black-plane-icon-vector-23682396.jpg"
+      />
+      <p>NYC > REK</p>
+      <p>Jan 31 - Feb 2</p>
+    </div>
+    <nav id="wrappernav">
+      <div class="wrappernav1">
+        <input type="text" name="name" placeholder="New York (NYC)" />
+        <input type="text" name="name" placeholder="Reykjavik (REK)" />
+      </div>
+      <div class="wrappernav1">
+        <input type="text" name="name" placeholder="Sat Jan 25" />
+        <input type="text" name="name" placeholder="Mon Jan 27" />
+      </div>
+      <div class="wrappernav1">
+        <input type="text" name="name" placeholder="3 Days" />
+        <button class="navbutton" type="submit">Search</button>
+      </div>
+    </nav>
+    <main>
+      <div id="left-box">
+        <div>
+          <ul>
+            <li><a href="#"></a>Price alert</li>
+            <li><a href=""></a>Airline fees</li>
+            <li><a href=""></a>Fare Charts</li>
+            <div><a href=""></a>Flex Dates +/- 3 Days</div>
+          </ul>
+        </div>
+        <div>
+          <img
+            id="pricetrend"
+            src="https://cdn.theatlantic.com/static/mt/assets/business/Screen%20Shot%202013-02-27%20at%204.20.45%20PM.png"
+            alt="pricetrend"
+          />
+        </div>
+        <div>
+          <h2>Stops</h2>
+          <input type="checkbox" name="nonstop" value="nonstop" /> nonstop<br />
+          <input type="checkbox" name="1 stop" value="1 stop" /> 1 stop<br />
+          <input type="checkbox" name="2+ stops" value="2+ stops" checked /> 2+
+          stops<br />
+          <div><a href=""></a>Show airline/stop price matrix</div>
+        </div>
+        <div>
+          <h2>Times</h2>
+          <label for="trips">Take-off New York</label>
+          <label for="time">Tue 2:00pm - Wed 12:00am</label>
+          <input
+            type="range"
+            name="trips"
+            id="trips"
+            value="5"
+            min="1"
+            max="10"
+          />
+          <br />
+          <label for="trips">Take-off Reykjavik</label>
+          <label for="time">Tue 2:00pm - Wed 12:00am</label>
+          <input
+            type="range"
+            name="trips"
+            id="trips"
+            value="5"
+            min="1"
+            max="10"
+          />
+        </div>
+        <div>
+          <h2>Airports</h2>
+          <input type="checkbox" name="Depart" value="Depart" /> Depart/Return,
+          same airports<br />
+        </div>
+      </div>
+      <div id="right-box">
+        <div class="flex-between">
+          <div>
+            <span class="bold">15</span>
+            <span>of</span>
+            <span class="bold">64 flights</span>
+            <a href="">Show All</a>
+          </div>
+          <div>
+            <span> Sort by price (low to high)</span>
+            <select>
+              <option></option>
+            </select>
+          </div>
+        </div>
+        <div class="outer-box">
+          <div>
+            <h2>Check Rates</h2>
+            <button class="navbutton" type="submit">Search</button>
+          </div>
+          <div>
+            <h2>Faster Flights. More Legroom 2 Bags Free</h2>
+            <p>Save time and money with Icelandair on your way to Reykjavik</p>
+          </div>
+          <div class="center-img">
+            <img
+              class="icelandair"
+              id="Icelandair"
+              src="data:image/png;base64,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"
+              alt="Icelandair"
+            />
+          </div>
+        </div>
+        <div class="outer-box">
+          <div>
+            <h2>$863</h2>
+            <div>Kayak</div>
+            <button class="navbutton" type="submit">Search</button>
+            <div><a href="">Orbitz</a></div>
+            <div><a href="">Cheap Tickets.c</a></div>
+            <span> 6 more sites</span>
+            <select>
+              6 more sites
+              <option></option>
+            </select>
+          </div>
+          <div class="body-box">
+            <div class="image-box">
+              <img
+                class="icelandairlogo"
+                src="http://logok.org/wp-content/uploads/2014/08/Icelandair_logo-880x660.png"
+                alt="Icelandair"
+              />
+              <div class="icelandair">
+                <h4>Icelandair</h4>
+                <p>JFK 2:10 pm -> KEF 11:40 pm 5h 30m nonstop</p>
+                <p>KEF 10:30 am -> JFK 12:25 pm 5h 55m nonstop</p>
+              </div>
+            </div>
+            <div class="details-fares">
+              <div>
+                <button>Details</button>
+                <button>Fairs</button>
+              </div>
+              <div>
+                <p>Economy</p>
+                <p>Icelandair operates flight 612, 614</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="outer-box">
+          <div>
+            <h2>$863</h2>
+            <div>Kayak</div>
+            <button class="navbutton" type="submit">Search</button>
+            <div><a href="">Orbitz</a></div>
+            <div><a href="">Cheap Tickets.c</a></div>
+            <span> 6 more sites</span>
+            <select>
+              6 more sites
+              <option></option>
+            </select>
+          </div>
+          <div class="body-box">
+            <div class="image-box">
+              <img
+                class="icelandairlogo"
+                src="http://logok.org/wp-content/uploads/2014/08/Icelandair_logo-880x660.png"
+                alt="Icelandair"
+              />
+              <div class="icelandair">
+                <h4>Icelandair</h4>
+                <p>EWR 8:45 pm -> KEF 6:15 am 5h 30m nonstop</p>
+                <p>KEF 10:30 am -> JFK 12:25 pm 5h 55m nonstop</p>
+              </div>
+            </div>
+            <div class="details-fares">
+              <div>
+                <button>Details</button>
+                <button>Fairs</button>
+              </div>
+              <div>
+                <p>Economy</p>
+                <p>Icelandair operates flight 622, 613</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="outer-box">
+          <div>
+            <h2>$863</h2>
+            <div>Kayak</div>
+            <button class="navbutton" type="submit">Search</button>
+          </div>
+          <div class="body-box">
+            <div class="image-box">
+              <img
+                class="icelandairlogo"
+                src="http://logok.org/wp-content/uploads/2014/08/Icelandair_logo-880x660.png"
+                alt="Icelandair"
+              />
+              <div class="icelandair">
+                <h4>Icelandair</h4>
+                <p>JFK 8:40 pm -> KEF 6:15 am 5h 35m nonstop</p>
+                <p>KEF 10:30 am -> JFK 12:25 pm 5h 55m nonstop</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
